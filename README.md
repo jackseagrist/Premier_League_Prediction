@@ -36,4 +36,11 @@ eg : Burnley’s away defensive strength:
  
 This shows that Burnley have a worse defence than an average team as they concede 7% more goals.
 
+## Prediction Model
+Running the file prompts the user to enter in two teams. The user is given a list of teams in the premier league to choose from.
 
+![image](https://github.com/jackseagrist/Premier_League_Prediction/blob/master/images/pl_pred_2.PNG)
+
+Once the teams are entered, the file then calculates the probability of a win, loss, and draw for the match. This is done by calculating home and away expected goals based on the attacking and defensive strengths of each team. The probability for a specific match outcome (i.e. 2-1) is then calculated by using the Poisson distribution to obtain how likely that number of goals will be scored for the home and away team based on the home and away goal expectancy. This is repeated for all potential match outcomes up to 10 goals for both the home and away sides to give a summary of win, loss, and draw percentages.
+
+![image](https://github.com/jackseagrist/Premier_League_Prediction/blob/master/images/pl_pred_3.PNG)
